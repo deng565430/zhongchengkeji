@@ -1,0 +1,529 @@
+
+#about {
+  width: 100%;
+}
+
+//轮播
+.ab-carousel {
+  height: 400px;
+  position: relative;
+  .ab-carousel-bg {
+    height: 400px;
+    background: url('/images/about_banner.jpg') no-repeat center;
+  }
+  .ab-carousel-gs {
+    ul {
+      position: absolute;
+      bottom: 0px;
+      left: 60px;
+      width: 450px;
+      li {
+        display: inline-block;
+        width: 84px;
+        text-align: center;
+        font-weight: bold;
+        a {
+          position: absolute;
+          bottom: 0;
+          display: inline-block;
+          line-height: 40px;
+          width: 89px;
+          height: 40px;
+          text-decoration: none;
+          transition: all .5s;
+        }
+        a:hover {
+          line-height: 100px;
+          height: 100px;
+          color: white;
+        }
+      }
+      li:nth-child(1) a {
+        background-color: #43bcc7;
+      }
+      li:nth-child(2) a {
+        background-color: #a6d250;
+      }
+      li:nth-child(3) a {
+        background-color: #eab055;
+      }
+      li:nth-child(4) a {
+        background-color: #e9d356;
+      }
+    }
+  }
+}
+
+//轮播图效果
+
+//公司概况
+.ab-survey {
+  div {
+    text-align: center;
+    padding-top: 60px;
+  }
+}
+
+//中间内容
+
+.ab-survey-content {
+  font-size: 12px;
+  padding: 0 80px;
+  height: 700px;
+  position: relative;
+
+  .ab-survey-content-left {
+    display: inline-block;
+    width: 500px;
+    height: 702px;
+    h2 {
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 40px;
+    }
+    h4 {
+      font-size: 15px;
+      line-height: 35px;
+      font-weight: bold;
+    }
+    p {
+      line-height: 25px;
+    }
+    .ab-survey-content-left-btn {
+      padding-top: 15px;
+      margin-top: 30px;
+      border-top: 1px dashed #ccc;
+      dl {
+        width: 670px;
+        dt, dd {
+          display: inline-block;
+          height: 30px;
+        }
+        dt {
+          width: 15px;
+          height: 15px;
+          color: white;
+          background: #4bcdd9;
+          text-align: center;
+          line-height: 15px;
+          margin-right: 5px;
+        }
+        dd {
+          width: 300px;
+        }
+      }
+    }
+
+  }
+  .ab-survey-content-right {
+    position: relative;
+    left: 200px;
+    top: 100px;
+    display: inline-block;
+    vertical-align: top;
+    img {
+      position: absolute;
+      width: 550px;
+    }
+  }
+}
+
+//媒体查询
+@media (max-width: 860px) {
+  .ab-survey-content-right {
+    img {
+      display: none;
+    }
+
+  }
+}
+
+.dianxian {
+  height: 1px;
+  width: 60px;
+  border-bottom: 1px solid cornflowerblue;
+  margin-bottom: 30px;
+}
+
+//公司文化
+.ab-culture {
+  background: url('/images/about_bj.jpg') no-repeat center;
+  height: 540px;
+  padding-top: 50px;
+  text-align: center;
+  img {
+    display: inline-block;
+    padding-bottom: 35px;
+  }
+  .ab-culture-content {
+    height: 500px;
+    position: relative;
+    > div {
+      text-align: left;
+      display: inline-block;
+      position: absolute;
+      left: 80px;
+    }
+    div {
+      h2 {
+        font-size: 20px;
+        line-height: 40px;
+        font-weight: bold;
+      }
+      h4 {
+        font-size: 17px;
+        line-height: 35px;
+      }
+      p {
+        font-size: 13px;
+        line-height: 30px;
+      }
+    }
+  }
+  //效果图
+  .ab-wrap {
+    vertical-align: top;
+    width: 400px;
+    .wrap {
+      position: relative;
+      left: 660px;
+      top: 50px
+    }
+    .cube {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      margin: 0 auto;
+      transform-style: preserve-3d;
+      transform: rotateX(-30deg) rotateX(-80deg);
+      animation: rotate 20s infinite;
+      animation-timing-function: linear;
+      a {
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        line-height: 200px;
+        color: white;
+        font-size: 30px;
+        text-decoration: none;
+      }
+    }
+    @-webkit-keyframes rotate {
+      from {
+        transform: rotateX(0deg) rotateY(0deg);
+      }
+      to {
+        transform: rotateX(360deg) rotateY(360deg);
+      }
+    }
+    @keyframes rotate {
+      from {
+        transform: rotateX(0deg) rotateY(0deg);
+      }
+      to {
+        transform: rotateX(360deg) rotateY(360deg);
+      }
+    }
+    .cube div {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      opacity: 0.8;
+      transition: all .4s;
+    }
+    .cube .out_front {
+      background-color: greenyellow;
+      transform: rotateY(0deg) translateZ(100px);
+    }
+    .cube .out_back {
+      background-color: #d80e56;
+      transform: translateZ(-100px) rotateY(180deg);
+    }
+    .cube .out_left {
+      background-color: #e8a72b;
+      transform: rotateY(90deg) translateZ(100px);
+    }
+    .cube .out_right {
+      background-color: #5467f9;
+      transform: rotateY(-90deg) translateZ(100px);
+    }
+    .cube .out_top {
+      background-color: #44f73b;
+      transform: rotateX(90deg) translateZ(100px);
+    }
+    .cube .out_bottom {
+      background-color: pink;
+      transform: rotateX(90deg) translateZ(-100px);
+    }
+    .cube span {
+      display: block;
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      top: 50px;
+      left: 50px;
+    }
+    .cube .in_front {
+      background-color: greenyellow;
+      transform: rotateY(0deg) translateZ(50px);
+    }
+    .cube .in_back {
+      background-color: #d80e56;
+      transform: translateZ(-50px) rotateY(180deg);
+    }
+    .cube .in_left {
+      background-color: #e8a72b;
+      transform: rotateY(90deg) translateZ(50px);
+    }
+    .cube .in_right {
+      background-color: #5467f9;
+      transform: rotateY(-90deg) translateZ(50px);
+    }
+    .cube .in_top {
+      background-color: #44f73b;
+      transform: rotateX(90deg) translateZ(50px);
+    }
+    .cube .in_bottom {
+      background-color: pink;
+      transform: rotateX(90deg) translateZ(-50px);
+    }
+    .cube:hover .out_front {
+      transform: rotateY(0deg) translateZ(200px);
+    }
+    .cube:hover .out_back {
+      transform: translateZ(-200px) rotateY(180deg);
+    }
+    .cube:hover .out_left {
+      transform: rotateY(90deg) translateZ(200px);
+    }
+    .cube:hover .out_right {
+      transform: rotateY(-90deg) translateZ(200px);
+    }
+    .cube:hover .out_top {
+      transform: rotateX(90deg) translateZ(200px);
+    }
+    .cube:hover .out_bottom {
+      transform: rotateX(90deg) translateZ(-200px);
+    }
+  }
+}
+
+//企业资质
+.ab-aptitude {
+  padding-top: 50px;
+  text-align: center;
+  height: 430px;
+  background-color: #f7f7f7;
+  position: relative;
+  div:last-child {
+    position: absolute;
+    left: 80px;
+
+    span {
+      display: inline-block;
+      width: 280px;
+      height: 100px;
+      transition: 1s all ease;
+      .ab_aptitude_content {
+        position: absolute;
+        display: inline-block;
+        width: 260px;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+        top: 36px;
+        font-size: 14px;
+        background-color: #ccc;
+        transition: 1s all;
+        padding-right: 20px;
+        opacity: 0;;
+      }
+      .pull-down1 {
+        left: 20px;
+      }
+      img {
+        display: inline-block;
+        width: 280px;
+        padding-left: 20px;
+        padding-top: 20px;
+        transition: all 0.5s;
+      }
+    }
+    .pull-down2 {
+      left: 305px;
+    }
+    .pull-down3 {
+      right: 285px;
+    }
+    .pull-down4 {
+      right: 0;
+    }
+    span:hover {
+      img {
+        transform: rotate(-360deg) scale(0);
+      }
+      p {
+        z-index: 1;
+        height: 170px;
+        line-height: 170px;
+        opacity: 1;
+        a {
+          color: #fcfcfc;
+        }
+      }
+
+    }
+  }
+}
+
+@media (max-width: 760px) {
+  .ab-aptitude {
+    div:last-child {
+
+      .ab_aptitude_content:nth-child(3), .ab_aptitude_content:nth-child(4) {
+        display: none;
+      }
+      img:nth-child(2), img:nth-child(3), img:nth-child(4) {
+        display: none;
+      }
+    }
+
+  }
+}
+
+@media (max-width: 560px) {
+  .ab-aptitude {
+    div:last-child {
+      span:nth-child(2) {
+        display: none;
+      }
+      span:nth-child(3) {
+        display: none;
+      }
+      span:nth-child(4) {
+        display: none;
+      }
+      img:nth-child(2), img:nth-child(3), img:nth-child(4) {
+        display: none;
+      }
+    }
+
+  }
+}
+
+//加入我们
+.ab-join-us {
+  padding-top: 20px;
+  text-align: center;
+  background: url('/images/about_joinus_bg.jpg') no-repeat center;
+  height: 650px;
+  position: relative;
+  .ab-join-bg {
+    width: 300px;
+    height: 300px;
+    img {
+      position: absolute;
+    }
+    img:first-child {
+      top: 6px;
+      left: 410px;
+    }
+    img:nth-child(2) {
+      top: 158px;
+      left: 109px;
+    }
+    .ab-join-tab {
+      position: absolute;
+      top: 157px;
+      left: 184px;
+      width: 500px;
+      li {
+        float: left;
+        width: 150px;
+        height: 150px;
+        line-height: 150px;
+        font-size: 20px;
+        color: #fff;
+        text-align: center;
+        background: url('/images/about_join_min_02.png') no-repeat center;
+        img {
+          display: inline-block;
+          position: absolute;
+          top: 50px;
+        }
+        .ab-min-img1 {
+          left: 45px;
+        }
+        .ab-min-img2 {
+          left: 208px;
+        }
+        .ab-min-img3 {
+          left: 345px
+        }
+        .ab-join-tab-hide {
+          position: absolute;
+          left: 200px;
+          top: 250px;
+          color: black;
+          line-height: 25px;
+          font-size: 13px;
+          width: 500px;
+          text-align: left;
+          display: none;
+        }
+      }
+
+      .show {
+        background: url('/images/about_join_min_01.png') no-repeat center;
+        .ab-join-tab-hide {
+          display: block;
+        }
+        img {
+          z-index: -2;
+        }
+      }
+    }
+  }
+  .ab-join-us-title {
+    height: 144px;
+    img {
+      display: inline-block;
+    }
+  }
+  .ab-join-content {
+    text-align: left;
+    position: absolute;
+    width: 100%;
+    h2 {
+      position: absolute;
+      top: -100px;
+      left: 375px;
+      font-size: 20px;
+    }
+  }
+  .ab-join-resume {
+    position: absolute;
+    height: 400px;
+    width: 1000px;
+    img{
+      display: inline-block;
+      position: absolute;
+      right:-100px;
+      top:-50px
+    }
+    p a {
+      position: absolute;
+      right: -70px;
+      top:20px;
+      color: white;
+      width: 100px;
+      height: 100px;
+      z-index: 999;
+    }
+
+    a:hover {
+      color: paleturquoise;
+    }
+  }
+}

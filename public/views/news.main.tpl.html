@@ -1,0 +1,150 @@
+<script>
+    $(document).ready(function () {
+        var list = [{
+            imgUrl: './images/news-1.jpg',
+            href: '#'
+        }, {
+            imgUrl: './images/news-2.jpg',
+            href: '#'
+        }, {
+            imgUrl: './images/news-3.jpg',
+            href: '#'
+        }, {
+            imgUrl: './images/news-4.jpg',
+            href: '#'
+        }, {
+            imgUrl: './images/news-5.jpg',
+            href: '#'
+        }, {
+            imgUrl: './images/news-6.jpg',
+            href: '#'
+        }]
+        $('#carousel-box').fade({
+            url: list,
+            boxWid: 1345,
+            boxHei: 300
+        }).css({
+            margin: '0 auto'
+        })
+    })
+</script>
+
+<div id="carousel-box"></div>
+<div class="news-tab">
+    <ul class="news-fix">
+        <li class="news-cyan">
+            <a href="" class="js_news_touch" ng-click="mynews('signs')">
+                <h2>最新签约</h2>
+            </a>
+        </li>
+        <li class="news-purple js_news_touch" ng-click="mynews('mynews')">
+            <a href="#">
+                <h2>公司新闻</h2>
+            </a>
+        </li>
+        <li class="news-green js_news_touch" ng-click="mynews('faqs')">
+            <a href="#">
+                <h2>常见问题</h2>
+            </a>
+        </li>
+        <li class="news-red js_news_touch" ng-click="mynews('websites')">
+            <a href="#">
+                <h2>网站建设</h2>
+            </a>
+        </li>
+        <li class="news-blue">
+            <a href="#">
+                <h2>媒体报道</h2>
+            </a>
+        </li>
+        <li class="news-red">
+            <a href="#">
+                <h2>手机网站</h2>
+            </a>
+        </li>
+        <li class="news-blue">
+            <a href="#">
+                <h2>员工天地</h2>
+            </a>
+        </li>
+        <li class="news-cyan">
+            <a href="#">
+                <h2>网站优化</h2>
+            </a>
+        </li>
+        <li class="news-purple">
+            <a href="#">
+                <h2>网站设计</h2>
+            </a>
+        </li>
+        <li class="news-green">
+            <a href="#">
+                <h2>主机域名</h2>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="news-list" id="js_news_hide">
+    <ul>
+        <li ng-repeat="new in news">
+            <div class="news-time news-fl">
+                <span class="news-day">{{new.house || 9}} </span>
+                <span class="news-year">{{new.months || 2007-01}}</span>
+                <span class="news-author">admin</span>
+                <span class="news-type">
+                    <a href="#">网站建设</a>
+                </span>
+            </div>
+            <div class="news-cont news-fr">
+                <h2>
+                    <a href="#">{{new.title || '这是新闻标题'}}</a>
+                </h2>
+                <p class="con-demo">
+                    <a href="#" style="color:#3c3c3c">{{new.content || '这是新闻列表'}}</a>
+                </p>
+                <p class="news-vis">
+                    <a href="" class="news-more news-btn js_news_hides" ui-sref="detail({id:new._id})"
+                       ng-click="click(new,new._id)">查看更多 >></a>浏览次数：419
+                </p>
+            </div>
+        </li>
+    </ul>
+    <ul class="js_news_hide">
+        <li>
+            <div class="news-time news-fl">
+                <span class="news-day">05</span>
+                <span class="news-year">2016-07</span>
+                <span class="news-author">admin</span>
+                <span class="news-type">
+                    <a href="#">网站建设</a>
+                </span>
+            </div>
+            <div class="news-cont news-fr">
+                <h2>
+                    <a href="#">看看如何做一份优秀的公司网站建设方案书</a>
+                </h2>
+                <p class="con-demo">
+                    <a href="#" style="color:#3c3c3c">在决定做好网站建设前，公司应该先对市场情况进行分析、明确建设网站的目的和功能性，并根据市场调查结果对网站建设的各项要求要点做出规划。网站规划对网站建设起到计划和指...</a>
+                </p>
+                <p class="news-vis">
+                    <a href="" class="news-more news-btn js_news_hides">查看更多 >></a>浏览次数：419
+                </p>
+            </div>
+        </li>
+    </ul>
+</div>
+<script src="js/news.js"></script>
+<script>
+
+
+    $(function () {
+
+
+        $('.js_news_touch').on('click', function () {//点击a标签
+           // alert(22)
+            $('.js_news_hide').hide()
+        })
+    })
+
+
+</script>

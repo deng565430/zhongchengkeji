@@ -1,0 +1,139 @@
+<script src="js/news.js"></script>
+<div id="carousel-box"></div>
+<div class="news-tab">
+    <ul class="news-fix">
+        <li class="news-cyan">
+            <a href="" class="js_news_touch" ui-sref="news">
+                <h2>最新签约</h2>
+            </a>
+        </li>
+        <li class="news-purple" class="js_news_touch" ui-sref="news">
+            <a href="#">
+                <h2>公司新闻</h2>
+            </a>
+        </li>
+        <li class="news-green" class="js_news_touch" ui-sref="news">
+            <a href="#">
+                <h2>常见问题</h2>
+            </a>
+        </li>
+        <li class="news-red" class="js_news_touch" ui-sref="news">
+            <a href="#">
+                <h2>网站建设</h2>
+            </a>
+        </li>
+        <li class="news-blue" ui-sref="news">
+            <a href="#">
+                <h2>媒体报道</h2>
+            </a>
+        </li>
+        <li class="news-red" ui-sref="news">
+            <a href="#">
+                <h2>手机网站</h2>
+            </a>
+        </li>
+        <li class="news-blue" ui-sref="news">
+            <a href="#">
+                <h2>员工天地</h2>
+            </a>
+        </li>
+        <li class="news-cyan" ui-sref="news">
+            <a href="#">
+                <h2>网站优化</h2>
+            </a>
+        </li>
+        <li class="news-purple" ui-sref="news">
+            <a href="#">
+                <h2>网站设计</h2>
+            </a>
+        </li>
+        <li class="news-green" ui-sref="news">
+            <a href="#">
+                <h2>主机域名</h2>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div id="js_news_show" class="js_hides">
+    <div class="news-crumbs">
+        <div class="news-wrap">
+            <i class="news-icon"></i>当前位置:
+            <a href='#'>主页</a> >
+            <a href='#' class="js_news_1">新闻资讯</a> >
+            <a href='#' class="js_news_2">网站建设</a> >
+        </div>
+    </div>
+
+    <!---->
+    <div class="news-info news-fix">
+        <div class="news-box news-fl" >
+            <div>
+                <div class="news-title">
+                    <h2>{{newsdetail.title}}</h2>
+                    <p class="sign">
+                        <span class="mark">发表日期：2017-01-10 11:31</span>
+                        <span class="mark">文章编辑：admin</span>
+                        <span class="mark">浏览次数: 100</span> 标签： &nbsp; &nbsp;
+                    </p>
+                </div>
+                <div class="demo">
+                    <div class="news-editor">
+                        <div id="editor">{{newsdetail.content}}</div>
+                    </div>
+                    <div class="notice"></div>
+                </div>
+            </div>
+            <div class="news-page-list news-fix"><a ui-sref="news" class="js_news_shows return">返回列表</a>
+                <ul>
+                    <li> 上一篇：<a href='#'>做网站网页格式不容忽视</a></li>
+                    <li> 下一篇：<a href='#'>网站建设的流程和相关信息</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="news-menu news-fr">
+            <dl>
+                <dt>相关新闻</dt>
+                <dd>
+                    <h3><a href="#" title="做网站网页格式不容忽视">做网站网页格式不容忽视</a></h3>
+                    <p class="text"><a href="#">一个新的网站的建设需要很多的流程，每一个流程也有其中相对注意的关系事项。在网站建设...</a></p>
+                    <p class="time">日期：2017-01-10 浏览次数：116</p>
+                </dd>
+            </dl>
+        </div>
+    </div>
+</div>
+<script>
+    $(function () {
+        var list = [{
+            imgUrl: './images/news-1.jpg',
+            href: '#'
+        }, {
+            imgUrl: './images/news-2.jpg',
+            href: '#'
+        }, {
+            imgUrl: './images/news-3.jpg',
+            href: '#'
+        }, {
+            imgUrl: './images/news-4.jpg',
+            href: '#'
+        }, {
+            imgUrl: './images/news-5.jpg',
+            href: '#'
+        }, {
+            imgUrl: './images/news-6.jpg',
+            href: '#'
+        }]
+        $('#carousel-box').fade({
+            url: list,
+            boxWid: 1345,
+            boxHei: 300
+        }).css({
+            margin: '0 auto'
+        })
+    })
+</script>
+
+
+
+

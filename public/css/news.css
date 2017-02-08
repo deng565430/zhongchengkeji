@@ -1,0 +1,408 @@
+
+.inside_banner_news {
+    background: url("../img/n_banner.jpg") no-repeat center;
+    height: 400px;
+}
+
+.news-fl {
+    float: left;
+}
+
+.news-fr {
+    float: right;
+}
+.news-wrap {
+    border: 0;
+    padding: 0;
+    width: 1200px;
+    margin: 0 auto;
+    *zoom: 1;
+}
+
+.news-wrap:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.posr {
+    position: relative;
+}
+
+.news-tab {
+    width: 1200px;
+    margin: 30px auto 0;
+    margin-bottom: 10px;
+}
+
+.news-tab ul {
+    margin-right: -40px;
+}
+
+.news-tab li {
+
+    float: left;
+    width: 205px;
+    height: 70px;
+    overflow: hidden;
+    margin-right: 43px;
+    margin-bottom: 20px;
+}
+
+.news-tab h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    font-weight: normal;
+    line-height: 65px;
+}
+
+
+
+.news-tab li:hover {
+    opacity: 1;
+    filter: alpha(opacity=100)
+}
+
+
+
+.news-tab .news-cyan {
+    background: #43bcc7;
+    opacity: 0.8;
+    filter: alpha(opacity=80)
+}
+
+.news-tab .news-red {
+    background: #de6764;
+    opacity: 0.8;
+    filter: alpha(opacity=80)
+}
+
+.news-tab .news-blue {
+    background: #31a0e1;
+    opacity: 0.8;
+    filter: alpha(opacity=80)
+}
+
+.news-tab .news-purple {
+    background: #6a8bd2;
+    opacity: 0.8;
+    filter: alpha(opacity=80)
+}
+
+.news-tab .news-green {
+    background: #9ac047;
+    opacity: 0.8;
+    filter: alpha(opacity=80)
+}
+
+.news-tab .news-black {
+    background: #000000;
+}
+
+.news-tab .news-cyansel {
+    background: #43bcc7;
+    opacity: 1;
+    filter: alpha(opacity=100)
+}
+
+.news-tab .news-redsel {
+    background: #de6764;
+    opacity: 1;
+    filter: alpha(opacity=100)
+}
+
+.news-tab .news-bluesel {
+    background: #31a0e1;
+    opacity: 1;
+    filter: alpha(opacity=100)
+}
+
+.news-tab .news-purplesel {
+    background: #6a8bd2;
+    opacity: 1;
+    filter: alpha(opacity=100)
+}
+
+.news-tab .news-greensel {
+    background: #9ac047;
+    opacity: 1;
+    filter: alpha(opacity=100)
+}
+
+.news-fix {
+    *zoom: 1;
+}
+
+.news-fix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.news-list {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.news-list li {
+    background: #f7f7f7;
+    zoom: 1;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.news-list .line {
+    display: block;
+    position: absolute;
+    background: #2eafbb;
+}
+
+.news-list li:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.news-time {
+    background: #2eafbb;
+    width: 120px;
+    height: 100%;
+    padding: 18px 20px 40px 0;
+}
+
+.news-time .news-day {
+    display: block;
+    font-size: 70px;
+    color: #fff;
+    font-family: "Impact";
+    text-align: right;
+}
+
+.news-time .news-year {
+    display: block;
+    color: #eee;
+    text-align: right;
+    line-height: 22px;
+}
+
+.news-time .news-author {
+    display: block;
+    color: #eee;
+    text-align: right;
+    line-height: 22px;
+}
+
+.news-time .news-type {
+    display: block;
+    text-align: right;
+    background: url("../img/n01.jpg") no-repeat right top;
+    padding-top: 6px;
+    margin-top: 4px;
+}
+
+.news-time .news-type a {
+    color: #fff;
+    font-family: '宋体', Arial;
+}
+
+.news-cont {
+    width: 980px;
+    margin-right: 40px;
+}
+
+.news-cont h2 {
+    font-size: 20px;
+    font-weight: normal;
+    padding-top: 26px;
+}
+
+.news-cont h2 a {
+    color: #333;
+}
+
+.news-cont a:hover {
+    color: #2eafbb;
+}
+
+.news-cont .con-demo {
+    line-height: 24px;
+    margin-top: 14px;
+}
+
+.news-btn {
+    font-family: "宋体";
+    font-weight: normal;
+}
+
+.news-cont .news-vis {
+    color: #999;
+    line-height: 38px;
+    margin-top: 12px;
+}
+
+.news-cont .news-more {
+    float: right;
+    color: #2eafbb;
+    display: inline-block;
+    border: 1px solid #2eafbb;
+    line-height: 38px;
+    padding: 0 24px;
+}
+
+.news-crumbs {
+    border-bottom: 1px solid #f7f7f7;
+    line-height: 40px;
+    color: #999999;
+    font-family: "宋体";
+}
+
+.news-crumbs .news-icon {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 4px;
+}
+
+.news-crumbs a {
+    color: #999;
+}
+
+.news-crumbs a:hover {
+    color: #666;
+}
+
+.news-info {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.news-box {
+    width: 840px;
+}
+
+.news-box .demo {
+    font-size: 14px;
+    color: #333;
+    line-height: 30px;
+    margin-top: 30px;
+}
+
+.news-box .notice {
+    font-size: 12px;
+    color: #999;
+    padding-top: 20px;
+    clear: both;
+}
+
+.news-title {
+    border-bottom: 1px solid #eeeeee;
+    margin-top: 40px;
+    padding-bottom: 18px;
+}
+
+.news-title h2 {
+    font-size: 20px;
+    color: #333;
+    font-weight: normal;
+}
+
+.news-title .sign {
+    color: #999;
+    margin-top: 12px;
+}
+
+.news-title .label {
+    color: #2eafbb;
+}
+
+.news-title .mark {
+    padding-right: 20px;
+}
+
+.news-editor {
+    line-height: 24px;
+    text-align: left;
+}
+
+.news-editor p {
+    text-indent: 2em;
+}
+
+.news-editor ol li {
+    list-style-type: circle;
+    margin-left: 25px;
+}
+
+.news-editor ul li {
+    list-style-type: square;
+    margin-left: 25px;
+}
+
+.news-page-list li {
+    line-height: 24px;
+    color: #999;
+}
+
+.news-page-list li a {
+    color: #999;
+}
+
+.news-page-list li a:hover {
+    color: #2eafbb;
+}
+
+.news-page-list .return {
+    float: right;
+    font-size: 14px;
+    color: #2eafbb;
+    border: 1px solid #2eafbb;
+    line-height: 38px;
+    padding: 0 20px;
+    margin-top: 6px;
+}
+
+
+
+.news-menu {
+    width: 240px;
+    background: #f7f7f7;
+    padding: 30px;
+    margin-top: 40px;
+}
+
+.news-menu dt {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 24px;
+}
+
+.news-menu dd {
+    border-bottom: 1px dashed #cccccc;
+    margin-bottom: 20px;
+}
+
+.news-menu dd h3 {
+    color: #333;
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.news-menu a:hover {
+    color: #2eafbb;
+}
+
+.news-menu .text {
+    color: #666;
+    line-height: 24px;
+    margin-bottom: 14px;
+}
+
+.news-menu .time {
+    color: #999999;
+    line-height: 24px;
+    margin-bottom: 6px;
+}
+

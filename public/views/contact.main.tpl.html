@@ -1,0 +1,67 @@
+<div class="contactDiv">
+    <div class="isMap" id="js_hidden">点击查看地图</div>
+    <div class="contactFormDiv">
+        <div class="formDiv">
+            <form novalidate="novalidate" ng-submit="leaveWord()">
+                <h4>给我们留言</h4>
+                <input type="text" ng-model="leaveWords.nickname"
+                       name="name" placeholder="您的称呼（必填）"
+                       onfocus="if(this.placeholder=='您的称呼（必填）')this.placeholder=''"
+                       onblur="if(this.placeholder=='')this.placeholder='您的称呼（必填）'"/>
+                <input type="text" placeholder="您的电话（必填）" ng-model="leaveWords.telephone"
+                       onfocus="if(this.placeholder=='您的电话（必填）')this.placeholder=''"
+                       onblur="if(this.placeholder=='')this.placeholder='您的电话（必填）'"/>
+                <input type="text" placeholder="您的邮箱" ng-model="leaveWords.email"
+                       onfocus="if(this.placeholder=='您的邮箱')this.placeholder=''"
+                       onblur="if(this.placeholder=='')this.placeholder='您的邮箱'"/>
+                <input type="text" placeholder="您所在的公司" ng-model="leaveWords.firm"
+                       onfocus="if(this.placeholder=='您所在的公司')this.placeholder=''"
+                       onblur="if(this.placeholder=='')this.placeholder='您所在的公司'"/>
+                <textarea placeholder="请输入留言内容" ng-model="leaveWords.content"
+                          onfocus="if(this.placeholder=='请输入留言内容')this.placeholder=''"
+                          onblur="if(this.placeholder=='')this.placeholder='请输入留言内容'"></textarea>
+                <input type="submit" value="提交信息" class="submit" ng-click="renovation()"/>
+            </form>
+        </div>
+        <div class="map" style="display: none">
+            <iframe src="../mapdemo.html" scrolling="no" ></iframe>
+        </div>
+    </div>
+    <div class="contactWay">
+        <div class="contactTile">
+            <img src="../images/contact_cn02.png"/>
+        </div>
+        <ul class="list-unstyled">
+            <li>
+                <div>
+                    <h4>公司地址</h4>
+                    <p>上海市杨浦区凤城路101号</p>
+                    <p>邮编：010000</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h4>联系方式</h4>
+                    <p>联系电话：+86-000-8888</p>
+                    <p>传真：+86-000-9999</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h4>公司邮箱</h4>
+                    <p>admin@dede58.com</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h4>联系QQ</h4>
+                    <p>客服：49770271</p>
+                    <p>客服：123456</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<script src="js/contact.js"></script>
+<!--
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=mDsGPuOyStN1mbp3hi8xEI9d6IiHIsHg"></script>-->

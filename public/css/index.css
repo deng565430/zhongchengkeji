@@ -1,0 +1,1136 @@
+body {
+    overflow-x: hidden;
+}
+
+.returnTop {
+    display: none;
+    background-color: #fff;
+    position: fixed;
+    right: 50px;
+    bottom: 30px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid #aaa;
+    overflow: hidden;
+    z-index: 200;
+}
+
+.returnTop img {
+    margin: 3px;
+    width: 25px;
+    height: 25px;
+}
+
+.nav {
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+
+.nav .nav-left {
+    position: absolute;
+    line-height: 100px;
+
+    height: 100px;
+}
+
+.nav .nav-left .split {
+    display: inline-block;
+    height: 40px;
+    width: 2px;
+    border: 1px solid #eee;
+    margin: 0 5px;
+    vertical-align: top;
+}
+
+.nav .nav-left .isHidden img {
+    vertical-align: top;
+}
+
+.nav .logo {
+    left: 80px;
+}
+
+.nav .nav-right {
+    position: absolute;
+}
+
+.nav .nav-right .list-unstyled {
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 850px;
+    margin-right: 80px;
+}
+
+.nav .nav-right .list-unstyled li {
+    text-align: center;
+    width: 70px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 20px;
+    height: 30px;
+}
+
+.nav .nav-right .list-unstyled li a {
+    width: 70px;
+    height: 30px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.nav .nav-right .list-unstyled li a:hover {
+    color: red;
+    text-shadow: 5px 5px 3px #aaa;
+}
+
+@media screen and (max-width: 1200px) {
+    .isHidden {
+        display: inline-block;
+    }
+}
+    @media screen and (max-width: 1600px) {
+        .isHidden {
+            display: inline-block;
+        }
+
+        .nav-left {
+            left: 80px;
+        }
+
+        .nav-right {
+            left: 400px;
+        }
+    }
+    @media screen and (max-width: 960px) {
+        .isHidden {
+            display: none;
+        }
+
+        .nav-left {
+            left: 10px;
+        }
+
+        .nav-right {
+            left: 150px;
+        }
+    }
+    .footer-top {
+        overflow: hidden;
+        background-color: #2eafbb;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        list-style: none;
+        height: 370px;
+        color: #fff;
+    }
+
+    .footer-top h4 {
+        line-height: 50px;
+        font-weight: 600;
+    }
+
+    .footer-top a {
+        color: #fff;
+    }
+
+    .footer-top a:hover {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .footer-top p {
+        font-size: 13px;
+        line-height: 25px;
+    }
+
+    .footer-top > li {
+        width: 250px;
+        height: 320px;
+        margin-right: 30px;
+        vertical-align: top;
+    }
+
+    .footer-top > li:nth-child(2) {
+        width: 300px;
+    }
+
+    .footer-top-first {
+        display: inline-block;
+    }
+
+    .footer-top-first .more {
+        display: block;
+        margin-top: 25px;
+        width: 120px;
+        height: 40px;
+        border: 1px solid #ccc;
+        line-height: 40px;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .footer-top-first .more:hover {
+        border: 1px solid #fff;
+    }
+
+    .footer-top-second {
+        display: inline-block;
+    }
+
+    .footer-top-second .demo1 {
+        height: 90px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .footer-top-second .demo2 {
+        margin-top: 20px;
+    }
+
+    .footer-top-second img {
+        float: left;
+        margin-top: 8px;
+    }
+
+    .footer-top-second .footer-top-second-right {
+        float: left;
+        margin-left: 10px;
+    }
+
+    .footer-top-second .footer-top-second-right a h5 {
+        font-size: 14px
+    }
+
+    .footer-top-second .footer-top-second-right p {
+        color: #ddd;
+    }
+
+    .isShow li {
+        display: inline-block;
+    }
+
+    .isShow li a {
+        display: inline-block;
+        width: 100px;
+        height: 40px;
+        border: 1px solid #ccc;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        line-height: 40px;
+        text-align: center;
+        font-size: 13px;
+        margin-right: 15px;
+    }
+
+    .isShow li a:hover {
+        border: 1px solid #fff;
+    }
+
+    .footer-top-fourth {
+        display: inline-block;
+    }
+
+    .footer-top-fourth div > p > span {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+    }
+
+    .footer-top-fourth div > p:nth-child(1) > span {
+        background: url("../images/sprite.png") 0 -20px no-repeat;
+    }
+
+    .footer-top-fourth div > p:nth-child(2) > span {
+        background: url("../images/sprite.png") -20px -20px no-repeat;
+    }
+
+    .footer-top-fourth div > p:nth-child(3) > span {
+        background: url("../images/sprite.png") -40px -18px no-repeat;
+    }
+
+    .footer-top-fourth div > p:nth-child(4) > span {
+        background: url("../images/sprite.png") 0 0 no-repeat;
+    }
+
+    .footer-top-fourth div > p:nth-child(5) > span {
+        background: url("../images/sprite.png") -80px -20px no-repeat;
+    }
+
+    @media screen and (max-width: 1400px) {
+        .footer-top {
+            padding-left: 80px;
+        }
+
+        .isShow {
+            display: inline-block;
+        }
+    }
+    @media screen and (max-width: 960px) {
+        .footer-top {
+            padding-left: 10px;
+        }
+
+        .isShow {
+            display: none;
+        }
+    }
+    .homePlay {
+        position: fixed;
+        width: 100%;
+        height: 30px;
+        bottom: 5px;
+        background-color: rgba(206, 215, 207, 0.5);
+        z-index: 50;
+    }
+
+    .homePlay span {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        line-height: 20px;
+        border-radius: 50%;
+        background-color: rgba(206, 215, 207, 0.5);
+        top: -10px;
+        color: #444;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .homePlay marquee {
+        line-height: 30px;
+        color: #666;
+    }
+
+    .homeAnchor {
+        z-index: 100;
+        position: fixed;
+        right: 30px;
+        top: 250px;
+    }
+
+    .homeAnchor a {
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #fff;
+        border: 2px solid #ccc;
+        margin-bottom: 15px;
+    }
+
+    .homeCarousel {
+        position: relative;
+    }
+
+    .homeCarousel .homeCarouselImg {
+        height: 500px;
+        overflow: hidden;
+    }
+
+    .homeCarousel .homeCarouselImg li {
+        transition: all 1s;
+        position: absolute;
+        width: 100%;
+    }
+
+    .homeCarousel .homeCarouselImg li img {
+        width: 100%;
+        height: 500px;
+    }
+
+    .homeCarousel .homeCarouselSpan {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        margin-left: -120px;
+        width: 240px;
+    }
+
+    .homeCarousel .homeCarouselSpan li {
+        display: inline-block;
+        width: 50px;
+        height: 4px;
+        background-color: #fff;
+        margin-right: 25px;
+    }
+
+    @media screen and (max-width: 1400px) {
+        .homeCarouselImg img {
+            width: 100%;
+        }
+    }
+    @media screen and (max-width: 960px) {
+        .homeCarouselImg img {
+            width: 960px;
+        }
+    }
+    .homeService {
+        width: 100%;
+        margin: 80px auto;
+    }
+
+    .homeServiceHeader {
+        width: 350px;
+        margin: 0 auto;
+    }
+
+    .homeServiceHeader .top {
+        display: block;
+        margin: 10px 0;
+        text-decoration: none;
+        color: black;
+        text-align: center;
+    }
+
+    .homeServiceHeader .top .skyBlue {
+        color: skyblue;
+    }
+
+    .homeServiceHeader .middle {
+        display: block;
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .homeServiceHeader p {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .top > span:nth-child(1) {
+        display: inline-block;
+        font-size: 25px;
+        font-weight: 700;
+        margin-right: 10px;
+    }
+
+    .top > span:nth-child(2) {
+        font-size: 16px;
+    }
+
+    .middle > span:nth-child(1) {
+        display: inline-block;
+        width: 70px;
+        height: 1px;
+        border: 1px solid #aaa;
+        margin-right: 10px;
+    }
+
+    .middle > span:nth-child(3) {
+        display: inline-block;
+        width: 70px;
+        height: 1px;
+        border: 1px solid #aaa;
+        margin-left: 10px;
+    }
+
+    .middle > span:nth-child(2) {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        background: #5eab29;
+        border-radius: 50%;
+        vertical-align: top;
+    }
+
+    .homeServerContent {
+        margin-top: 35px;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .homeServerContent li {
+        vertical-align: top;
+        display: inline-block;
+        margin-top: 50px;
+        margin-left: 30px;
+        width: 270px;
+    }
+
+    .homeServerContent li div {
+        width: 270px;
+        height: 200px;
+        overflow: hidden;
+    }
+
+    .homeServerContent li div img {
+        transition: all 1s;
+    }
+
+    .homeServerContent li div img:hover {
+        transform: rotate(10deg) scale(1.2, 1.2);
+    }
+
+    .homeServerContent li .title {
+        font-size: 20px;
+        margin: 20px 0;
+    }
+
+    .homeServerContent li .title a {
+        display: block;
+        color: black;
+        text-align: left;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .homeServerContent li .content {
+        font-size: 13px;
+        color: #aaa;
+        text-align: left;
+        line-height: 25px;
+    }
+
+    .homeServerContent li:nth-child(1) {
+        margin-left: 0;
+    }
+
+    @media screen and (max-width: 1400px) {
+        .homeServerContent {
+            height: 450px;
+        }
+    }
+    @media screen and (max-width: 870px) {
+        .homeServerContent {
+            height: 900px;
+        }
+    }
+    .homeSuccess {
+        width: 100%;
+        height: 80px;
+        background: #60d0db;
+        margin-bottom: 30px;
+    }
+
+    .homeSuccess p {
+        width: 740px;
+        margin: 0 auto;
+        font-size: 20px;
+        font-weight: 700;
+        color: #fff;
+        line-height: 80px;
+    }
+
+    .homeSuccessCases .homeSuccessCasesHeader {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .homeSuccessCases .homeSuccessCasesHeader .top {
+        display: block;
+        width: 300px;
+        margin: 10px auto;
+        text-decoration: none;
+        color: black;
+    }
+
+    .homeSuccessCases .homeSuccessCasesHeader .top .skyBlue {
+        color: skyblue;
+    }
+
+    .homeSuccessCases .homeSuccessCasesHeader .middle {
+        display: block;
+        text-decoration: none;
+        color: black;
+        margin-bottom: 30px;
+    }
+
+    .homeSuccessCases .homeSuccessCasesHeader p {
+        width: 100%;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .homeSuccessCases .homeSuccessCasesContent {
+        padding-left: 60px;
+        text-align: center;
+    }
+
+    .homeSuccessCases .homeSuccessCasesContent li {
+        position: relative;
+        margin-right: 60px;
+        display: inline-block;
+        margin-top: 30px;
+    }
+
+    .homeSuccessCases .homeSuccessCasesContent li div {
+        height: 60px;
+        width: 0px;
+        background: rgba(203, 204, 199, 0.5);
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transition: all 1s;
+        transition-timing-function: ease-in;
+    }
+
+    .homeSuccessCases .homeSuccessCasesContent li p {
+        font-size: 20px;
+        font-weight: 700;
+        position: absolute;
+        bottom: 0px;
+        left: 50px;
+        height: 30px;
+        width: 0px;
+        overflow: hidden;
+        text-align: center;
+        color: #2eafbb;
+        transition: all 0.6s;
+        transition-timing-function: ease-out;
+        transition-delay: 0.4s;
+    }
+
+    .homeSuccessCases .homeSuccessCasesContent li:hover div {
+        width: 300px;
+    }
+
+    .homeSuccessCases .homeSuccessCasesContent li:hover p {
+        width: 200px;
+    }
+
+    .homeSuccessCases .casesMore {
+        margin: 30px auto 50px;
+        width: 125px;
+        height: 40px;
+        border: 1px solid #15909c;
+        text-align: center;
+        line-height: 40px;
+    }
+
+    .homeSuccessCases .casesMore a {
+        text-decoration: none;
+        color: #15909c;
+    }
+
+    .casesMore:hover {
+        background-color: #15909c;
+    }
+
+    .casesMore:hover a {
+        color: #fff;
+    }
+
+    .homeSolution {
+        overflow: hidden;
+        margin-bottom: 50px;
+        background-image: url("../images/solutions_bg.jpg");
+        padding: 30px 0;
+    }
+
+    .homeSolution .homeSolutionHeader {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .homeSolution .homeSolutionHeader .top {
+        display: block;
+        width: 300px;
+        margin: 10px auto;
+        text-decoration: none;
+        color: black;
+    }
+
+    .homeSolution .homeSolutionHeader .top .skyBlue {
+        color: skyblue;
+    }
+
+    .homeSolution .homeSolutionHeader .middle {
+        display: block;
+        text-decoration: none;
+        color: black;
+        margin-bottom: 30px;
+    }
+
+    .homeSolution .homeSolutionHeader p {
+        width: 100%;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .homeSolutionContent {
+        height: 330px;
+        overflow: hidden;
+        text-align: center;
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    .homeSolutionContent .cover {
+        position: absolute;
+        height: 0;
+        width: 250px;
+        transition: all 1s;
+        left: 12px;
+        bottom: -250px;
+    }
+
+    .homeSolutionContent li {
+        margin-right: 30px;
+        width: 250px;
+        padding: 40px 25px;
+        display: inline-block;
+        position: relative;
+    }
+
+    .homeSolutionContent li .homebox {
+        position: absolute;
+        z-index: 10;
+    }
+
+    .homeSolutionContent li .homebox div {
+        margin: auto;
+        text-align: center;
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+
+    .homeSolutionContent li .homebox div img {
+        transition: all 1s;
+    }
+
+    .homeSolutionContent li .homebox .title {
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .homeSolutionContent li .homebox .title a {
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+    }
+
+    .homeSolutionContent li .homebox .content {
+        font-size: 13px;
+        text-align: center;
+        color: #666;
+    }
+
+    .homeSolutionContent li:nth-child(4) {
+        margin-right: 0;
+    }
+
+    .homeSolutionContent li:hover div img {
+        margin-top: -140px;
+    }
+
+    .homeSolutionContent li:hover .title a {
+        color: #fff;
+    }
+
+    .homeSolutionContent li:hover .content {
+        color: #fff;
+    }
+
+    .homeSolutionContent li:nth-child(1):hover .cover {
+        background-color: #2eafbb;
+        height: 330px;
+    }
+
+    .homeSolutionContent li:nth-child(2):hover .cover {
+        background-color: #5ea927;
+        height: 330px;
+    }
+
+    .homeSolutionContent li:nth-child(3):hover .cover {
+        background-color: #1a8fd1;
+        height: 330px;
+    }
+
+    .homeSolutionContent li:nth-child(4):hover .cover {
+        background-color: #b57dd1;
+        height: 330px;
+    }
+
+    .solutionMore {
+        margin: 40px auto;
+        width: 125px;
+        height: 40px;
+        border: 1px solid #555555;
+        text-align: center;
+        line-height: 40px;
+    }
+
+    .solutionMore a {
+        text-decoration: none;
+        color: #555555;
+    }
+
+    .solutionMore:hover {
+        background-color: #555555;
+    }
+
+    .solutionMore:hover a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .homeNew .homeNewHeader {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .homeNew .homeNewHeader .top {
+        display: block;
+        width: 300px;
+        margin: 10px auto;
+        text-decoration: none;
+        color: black;
+    }
+
+    .homeNew .homeNewHeader .top .skyBlue {
+        color: skyblue;
+    }
+
+    .homeNew .homeNewHeader .middle {
+        display: block;
+        text-decoration: none;
+        color: black;
+        margin-bottom: 30px;
+    }
+
+    .homeNew .homeNewHeader p {
+        width: 100%;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .homeNewContent {
+        text-align: center;
+    }
+
+    .homeNewContent li {
+        border-radius: 8px;
+        margin-right: 15px;
+        margin-bottom: 30px;
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        width: 385px;
+        height: 140px;
+        border: 1px solid #aaa;
+    }
+
+    .homeNewContent li span {
+        position: absolute;
+        transition: all 1s;
+        width: 0px;
+        height: 0px;
+        border: 1px solid deepskyblue;
+    }
+
+    .homeNewContent li .top-left {
+        left: -1px;
+    }
+
+    .homeNewContent li .top-right {
+        left: 381px;
+    }
+
+    .homeNewContent li .bottom-left {
+        bottom: 0px;
+        left: 0;
+    }
+
+    .homeNewContent li .bottom-right {
+        bottom: 0px;
+        left: 0;
+    }
+
+    .homeNewContent li .newIsShow {
+        position: absolute;
+        top: 20px;
+        transition: all 1s;
+        text-align: center;
+    }
+
+    .homeNewContent li .title {
+        margin-bottom: 20px;
+    }
+
+    .homeNewContent li .title a {
+        color: black;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .homeNewContent li .content {
+        color: #666;
+        font-size: 13px;
+        padding: 0 15px;
+        line-height: 20px;
+    }
+
+    .homeNewContent li:hover .top-left {
+        width: 382px;
+    }
+
+    .homeNewContent li:hover .top-right {
+        height: 140px;
+    }
+
+    .homeNewContent li:hover .bottom-left {
+        height: 140px;
+    }
+
+    .homeNewContent li:hover .bottom-right {
+        width: 382px;
+    }
+
+    .homeNewContent li:hover .newIsShow {
+        top: -60px;
+    }
+
+    .homeNewContent li:hover .title a {
+        color: #15909c;
+    }
+
+    .homeNewMore {
+        margin: 30px auto 50px;
+        width: 125px;
+        height: 40px;
+        border: 1px solid #15909c;
+        text-align: center;
+        line-height: 40px;
+    }
+
+    .homeNewMore a {
+        text-decoration: none;
+        color: #15909c;
+    }
+
+    .homeNewMore:hover {
+        background-color: #15909c;
+    }
+
+    .homeNewMore:hover a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .ourCustomers {
+        margin-bottom: 80px;
+    }
+
+    .ourCustomers .ourCustomersHeader {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .ourCustomers .ourCustomersHeader .top {
+        display: block;
+        width: 300px;
+        margin: 10px auto;
+        text-decoration: none;
+        color: black;
+    }
+
+    .ourCustomers .ourCustomersHeader .top .skyBlue {
+        color: skyblue;
+    }
+
+    .ourCustomers .ourCustomersHeader .middle {
+        display: block;
+        text-decoration: none;
+        color: black;
+        margin-bottom: 30px;
+    }
+
+    .ourCustomers .ourCustomersHeader p {
+        width: 100%;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    @-webkit-keyframes myFirst {
+        0% {
+            -webkit-transform: scaleX(-1);
+        }
+        100% {
+            -webkit-transform: scaleX(1);
+        }
+    }
+    .ourCustomersContent ul {
+        width: 1200px;
+        margin: 0 auto;
+        font-size: 0;
+        overflow: hidden;
+    }
+
+    .ourCustomersContent ul li {
+        display: inline-block;
+        width: 240px;
+        height: 140px;
+        border-top: 1px solid #aaa;
+        border-left: 1px solid #aaa;
+    }
+
+    .ourCustomersContent ul li img {
+        margin-top: 20px;
+        margin-left: 50px;
+        opacity: 0.5;
+    }
+
+    .ourCustomersContent ul li:nth-child(5) {
+        border-right: 1px solid #aaa;
+    }
+
+    .ourCustomersContent ul li:hover img {
+        -webkit-animation: myFirst 1.2s;
+        opacity: 1;
+    }
+
+    .ourCustomersContent ul:nth-child(3) li {
+        border-bottom: 1px solid #aaa;
+    }
+
+    .contactDiv {
+        position: relative;
+    }
+
+    .contactDiv .isMap {
+        position: absolute;
+        text-align: center;
+        left: 0;
+        top: 120px;
+        width: 25px;
+        background-color: #2eafbb;
+        z-index: 100;
+        color: #fff;
+        font-size: 13px;
+        height: 120px;
+        padding-top: 7px;
+    }
+
+    .contactFormDiv {
+        position: relative;
+        width: 100%;
+        height: 400px;
+        background-image: url("../images/contact_c_banner.jpg");
+    }
+
+    .contactFormDiv .map {
+        position: absolute;
+        right: 0px;
+    }
+
+    .contactFormDiv iframe {
+        height: 400px;
+        width: 800px;
+    }
+
+    .contactFormDiv .formDiv {
+        position: absolute;
+        left: 50px;
+        width: 460px;
+        height: 400px;
+        background-color: rgba(255, 255, 255, 0.3);
+        color: #fff;
+        text-align: center;
+    }
+
+    .contactFormDiv .formDiv h4 {
+        margin: 50px auto 15px;
+        width: 375px;
+        text-align: left;
+        font-size: 21px;
+    }
+
+    .contactFormDiv .formDiv input {
+        width: 185px;
+        height: 35px;
+        margin-left: 15px;
+        margin-bottom: 10px;
+        padding: 10px;
+        color: #aaa;
+        background-color: rgba(255, 255, 255, 0);
+        border: 1px solid #aaa;
+        font-size: 13px;
+    }
+
+    .contactFormDiv .formDiv .submit {
+        width: 120px;
+        height: 40px;
+        color: #fff;
+        border: 1px solid #fff;
+        position: absolute;
+        left: 28px;
+        top: 300px;
+    }
+
+    .contactFormDiv .formDiv input:nth-child(2n-1) {
+        margin-right: 0;
+    }
+
+    .contactFormDiv .formDiv textarea {
+        background-color: rgba(255, 255, 255, 0);
+        padding: 10px;
+        width: 390px;
+        height: 105px;
+        margin-left: 16px;
+        resize: none;
+        font-size: 13px;
+    }
+
+    .contactWay {
+        margin-top: 50px;
+        background-image: url("../images/contact_cn01.jpg");
+    }
+
+    .contactWay .contactTile {
+        text-align: center;
+    }
+
+    .contactWay ul {
+        margin: 30px auto 100px;
+        width: 1200px;
+        overflow: hidden;
+    }
+
+    .contactWay ul li {
+        display: inline-block;
+        width: 280px;
+        height: 260px;
+        margin-right: 20px;
+        vertical-align: top;
+    }
+
+    .contactWay ul li div {
+        width: 100%;
+        text-align: center;
+        margin-top: 50px;
+        font-weight: 600;
+    }
+
+    .contactWay ul li div h4 {
+        font-weight: 600;
+        line-height: 50px;
+    }
+
+    .contactWay ul li:nth-child(4) {
+        margin-right: 0;
+        background-color: #d5ecf9;
+    }
+
+    .contactWay ul li:nth-child(1) {
+        background-color: #f9e0e0;
+    }
+
+    .contactWay ul li:nth-child(2) {
+        background-color: #ddf2e0;
+    }
+
+    .contactWay ul li:nth-child(3) {
+        background-color: #ebf3da;
+    }

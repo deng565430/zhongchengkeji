@@ -1,0 +1,231 @@
+body ul{
+	margin: 0;
+	padding: 0;
+}
+ul, ol, li{
+	list-style-type: none;
+}
+.banner{
+	height: 400px;
+	background: url('../images/service_banner.jpg') no-repeat fixed top;
+}
+.ser-project{
+	.ser-title{
+		padding-top: 50px;
+		text-align: center;
+	}
+	.fix::after {
+	    clear: both;
+	    content: "";
+	    display: table;
+	}
+	ul{
+		margin: 40px auto;
+    	width: 1200px;
+	}
+	li{
+		width: 270px;
+		height: 270px;
+		float: left;
+	    margin-left: 40px;
+	    overflow: hidden;
+	    position: relative;
+	}
+	li:first-child {
+	    margin: 0;
+	}
+	li .blur_shade{
+		background: rgba(0, 0, 0, 0) url("../images/ser-project-blur.png") no-repeat scroll 0 0;
+	    height: 100%;
+	    left: 0;
+	    top: -600px;
+	    opacity: 0;
+	    position: absolute;
+	    text-align: center;
+	    width: 100%;
+	    z-index: 2;
+	    h4{
+	    	color: #333;
+		    font-size: 20px;
+		    font-weight: normal;
+		    padding-top: 100px;
+	    }
+	    .text{
+	    	background: rgba(0, 0, 0, 0) url("../images/ser-project-dividing.jpg") no-repeat scroll center top;
+		    color: #333;
+		    font-size: 14px;
+		    margin-top: 8px;
+		    padding: 8px 10px 0;
+	    }
+	}
+	li:hover{ 
+		.blur_shade{
+			top: 0;
+		    opacity: 1;
+		}
+	    img{
+	    	opacity: 0.3;
+	    }
+	}
+}
+
+
+.ser-scope {
+    background: #f7f7f7 none repeat scroll 0 0;
+    padding-bottom: 70px;
+    .ser-title{
+    	padding-top: 50px;
+    	text-align: center;
+    }
+    .picScroll-left{
+    	margin: 0 auto;
+	    overflow: hidden;
+	    padding-bottom: 40px;
+	    position: relative;
+	    width: 1200px;
+	    .hd {
+		    bottom: 0;
+		    overflow: hidden;
+		    position: absolute;
+		    text-align: center;
+		    width: 100%;
+		    z-index: 2;
+		    a {
+		        border: 1px solid #999;
+		        color: #999;
+		        cursor: pointer;
+		        display: inline-block;
+		        font-size: 20px;
+		        font-weight: 200;
+		        line-height: 38px;
+		        margin: 0 5px;
+		        text-align: center;
+		        width: 38px;
+			    font-family: "宋体";
+		    }
+		}
+		.bd{
+			.tempWrap{
+				overflow: hidden;
+			    position: relative;
+			    width: 1200px;
+			    .picList{
+			    	left: 0;
+				    margin: 0;
+				    overflow: hidden;
+				    padding: 0;
+				    position: relative;
+				    width: 2400px;
+				    li{
+				    	float: left;
+					    width: 1200px;
+					    .fix::after {
+						    clear: both;
+						    content: "";
+						    display: table;
+						}
+						.picBox {
+						    margin: 40px auto;
+						    width: 1200px;
+						    li{
+						    	display: table;
+							    float: left;
+							    position: relative;
+							    width: 400px;
+							    img{
+							    	height: 220px;
+								    width: 400px;
+							    }
+						    }
+						    .ser-info{
+						    	color: #333;
+							    font-size: 16px;
+							    left: 0;
+							    line-height: 40px;
+							    position: absolute;
+							    text-align: center;
+							    width: 100%;
+						    }
+						    .ser-shade {
+							    background: #fff none repeat scroll 0 0;
+							    height: 100%;
+							    left: 0;
+							    opacity: 0.6;
+							    position: absolute;
+							    top: 0;
+							    width: 100%;
+							}
+							.intro {
+							    color: #fff;
+							    font-size: 14px;
+							    left: 0;
+							    line-height: 26px;
+							    margin: auto 28px;
+							    padding-top: 36px;
+							    position: absolute;
+							    top: 0;
+							}
+						    .s1 .ser-info,.s5 .ser-info{
+						    	bottom: 0;
+						    }
+						    .s3 .ser-info{
+						    	top: 0;
+						    }
+						    h2 {
+						        color: #333;
+						        font-size: 16px;
+						        font-weight: normal;
+						        position: relative;
+						        z-index: 2;
+						    }
+						    .s2::after,.s4::after,.s6::after{
+						    	border-width: 10px;
+						    	content: "";
+						        height: 0;
+						        position: absolute;
+						        width: 0;
+						    }
+						    .s2::after{
+						    	border-color: transparent #2eafbb transparent transparent;
+							    border-style: dashed solid dashed dashed;
+							    left: -20px;
+							    top: 50%;
+						    }
+						    .s4::after {
+						        border-color: transparent transparent transparent #2eafbb;
+						        border-style: dashed dashed dashed solid;
+						        right: -20px;
+						        top: 50%;
+						        z-index: 2;
+						    }
+						    .s6::after {
+						        border-color: transparent transparent #2eafbb;
+						        border-style: dashed dashed solid;
+						        left: 50%;
+						        top: -20px;
+						    }
+						}
+				    }
+			    }
+			}
+		}
+    }
+}
+
+
+.ser-process {
+    .ser-title{
+    	padding-top: 50px;
+    	text-align: center;
+    	img{
+    		width: 232px;
+    		height: 53px;
+    	}
+    }
+	.wrap {
+		height: 640px;
+	    margin: 40px auto;
+	    text-align: center;
+        transition: all 5s;
+	}
+}

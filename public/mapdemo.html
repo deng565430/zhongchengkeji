@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!--引入jquery-->
+
+	<!--引入地图包，地图包网址的ak属性是你在百度地图开放平台上申请的秘钥-->
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=vsTFG8rfVXuxASNGlDXvCTNDYgGLIKdp"></script>
+    
+	<title>Document</title>
+</head>
+<body>
+	<div id="allmap" style="width: 800px;height: 440px"></div>
+</body>
+<script>
+	// 百度地图API功能  
+    var map = new BMap.Map("allmap");//创建百度地图实例，这里的allmap是地图容器的id  
+    var point = new BMap.Point(121.521162,31.283522);//创建一个点对象，这里的参数是地图上的经纬度  
+    map.centerAndZoom(point, 12);//这里是将地图的中心移动到我们刚才创建的点；这里的12是地图的缩放界别；数值越大，地图看的越细  
+    //缩放
+    setTimeout(function(){
+		map.setZoom(20);   
+	}, 2000);  //2秒后放大到20级
+	map.enableScrollWheelZoom(true);
+
+    var marker1 = new BMap.Marker(point);        // 创建标注
+	//信息窗口
+	var opts = {
+	  	width : 200,     // 信息窗口宽度
+	  	height: 100,     // 信息窗口高度
+	  	title : "同叶大厦" , // 信息窗口标题
+	  	enableMessage:true,//设置允许信息窗发送短息
+	  	message:"亲耐滴，晚上一起吃个饭吧？戳下面的链接看下地址喔~"
+	};
+	var infoWindow = new BMap.InfoWindow("地址：上海市杨浦区铁岭路32号", opts);  // 创建信息窗口对象 
+	marker1.addEventListener("click", function(){          
+		map.openInfoWindow(infoWindow,point); //开启信息窗口
+	});
+
+	map.addOverlay(marker1);
+</script>
+</html>
